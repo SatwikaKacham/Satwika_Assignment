@@ -1,0 +1,151 @@
+/* Add your own styling for user-supplied words */
+:root {
+    --secoundary: #b3b3b4;
+    --secoundary-black: #272727;
+    --primary: #ff3e6c;
+    --gray-text: #535665;
+    --success: green;
+    --warning: #f9a61a;
+    --danger: #f34648;
+    --success-light: rgb(156, 216, 156);
+    --warning-light: #f8e0b7;
+    --danger-light: #f7b2b3;
+}
+
+*{
+    margin:0;
+}
+
+input {
+    border: 2px solid white;
+    border-bottom: 2px solid  var(--primary);
+    padding: 5px;
+    margin-bottom: 10px;
+
+}
+
+#madLibsStory ,#resultMessage{
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+    border: 2px solid var(--secoundary);
+    padding : 2rem;
+    margin : 2rem;
+}
+
+
+
+
+#madLibsFormInput, #tomThumbFormInput{
+    border: 2px solid var(--secoundary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding : 2rem;
+    margin : 2rem;
+
+}
+
+.bold{
+font-weight: 400;
+}
+
+
+.nav-title {
+    color: var(--primary);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-title a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.nav-navigators {
+    display: flex;
+    font-weight: 600;
+    gap: 1rem;
+}
+
+.nav-navigator-item {
+    position: relative;
+    box-sizing: border-box;
+    transition: width 2s ease-out;
+    color: var(--secoundary-gray);
+}
+
+.nav-navigator-item:hover {
+    color: var(--primary);
+}
+
+.nav-navigators a ,.pick-container a{
+    display: block;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    gap: 2rem;
+    box-shadow: 1px 1px 3px var(--secoundary);
+    color: #4e4f53;
+    width: 100%;
+    margin:0;
+    padding:1rem;
+}
+
+.highlight {
+    color: var(--primary);
+}
+
+.button-container {
+    border: 2px solid var(--secoundary-black);
+    border-radius: 0.3rem;
+    width: fit-content;
+    color: black;
+    font-weight: 700;
+    padding: 0.8rem;
+    cursor: pointer;
+    background-color: white;
+
+}
+
+.button-container:hover {
+    box-shadow: 1px 1px 3px var(--secoundary);
+}
+
+.primary-button {
+    background-color: var(--primary);
+    border: 2px solid var(--primary);
+
+}
+
+.title{
+    padding-top: 2rem;
+    color: var(--secoundary-black);
+}
+
+.buttonHolder , .titleHolder ,.resultHolder
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.home-buttons{
+    padding:5rem;
+}
+
+.pick-container{
+    display: flex;
+    gap:2rem;
+    margin:5rem;
+    align-items: center;
+    justify-content: center;
+
+}
