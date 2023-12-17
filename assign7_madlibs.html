@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mad Libs</title>
+    <link rel="stylesheet" href="assign7.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <h1 class="nav-title">Assignment7</h1>
+            <div class= "nav-navigators" >
+                <a class= "nav-navigator-item" href="index.html">Home</a>
+                <a class= "nav-navigator-item" href="/assign7_madlibs.html">Mad Libs </a>
+                <a class= "nav-navigator-item" href="/assign7_tomthumb.html">Tom Thumb</a>
+            </div>
+        </div>
+        
+    </header>
+    <main>
+        <div class="titleHolder">
+        <h1 class="title">Mad Libs Game!</h1>
+        </div>
+        <form id="madLibsForm">
+        <div id="madLibsFormInput">
+
+            <div class="inputItem">
+            <label for="nounName" class="bold">Noun (Name):</label>
+            <input type="text" id="nounName" value="John">
+            </div>
+            
+            <div class="inputItem">
+            <label for="nounObject" class="bold">Noun (Object):</label>
+            <input type="text" id="nounObject" value="banana">
+            </div>
+            
+            <div class="inputItem">
+            <label for="adjective" class="bold">Adjective:</label>
+            <input type="text" id="adjective" value="silly">
+            </div>
+            
+            <div class="inputItem">
+            <label for="adverb" class="bold">Adverb:</label>
+            <input type="text" id="adverb" value="playfully">
+            </div>
+        
+        </div>
+        <div class="buttonHolder">
+            <button type="button" id="generateStoryBtn" class="button-container primary-button">Generate Story</button>
+        </div>
+        </form>
+        
+        <div id="madLibsStory"></div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="assign7.js"></script>
+</body>
+</html>
